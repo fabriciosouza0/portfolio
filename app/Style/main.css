@@ -1,0 +1,79 @@
+:root {
+	--bg: #000;
+	--bg-2: #111;
+	--text-color-main: #F2F2F2;
+	--link-color-second: #B8FFAB;
+	--font-size-lg: 2rem;
+	--font-size-md: 0.875rem;
+	--font-size-md-lg: 1rem;
+	--font-size-sm: 2.5rem;
+}
+
+/* Displays */
+/* flex */
+.flex {
+	display: flex;
+}
+
+.justify-content-start {
+	justify-content: flex-star;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+
+.justify-content-end {
+	justify-content: flex-end;
+}
+
+.align-items-center {
+	align-items: center !important;
+}
+
+.flex-direction-column {
+	flex-direction: column;
+}
+
+.flex-direction-row {
+	flex-direction: row;
+}
+/* Fim flex */
+
+/* Grid */
+.grid {
+	display: grid;
+}
+
+.grid-2fr {
+	grid-template-columns: repeat(2, 1fr);
+}
+/* Fim Grid */
+
+/* Block */
+.block {
+	display: block;
+}
+/* Fim Block */
+
+/* None */
+.none {
+	display: none;
+}
+/* Fim None */
+/* Fim Displays */
+
+/* Font */
+.font-size-lg {
+	font-size: var(--font-size-lg);
+}
+
+.font-size-md {
+	font-size: var(--font-size-md);
+}
+
+.font-size-sm {
+	font-size: var(--font-size-sm);
+}
+/* Fim Font */

@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-2);
+    padding: 3rem;
+    color: var(--text-color-main);
+}
+
+footer h4 {
+    font-size: var(--font-size-md-lg);
+    font-weight: 700;
+}
+
+footer p {
+    max-width: 400px;
+    font-size: var(--font-size-md);
+}
+
+.btn {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
