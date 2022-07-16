@@ -1,0 +1,30 @@
+main.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+main.container p {
+    margin-top: 1.2rem;
+    max-width: 300px;
+}
+
+main.container #trabalhos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-top: 1.8rem;
+    width: 100%;
+}
+
+main.container #trabalhos div img {
+    width: 100%;
+	object-fit: contain;
+	height: 300px;
+}
+
+main.container #trabalhos div {
+    background-color: var(--bg-2);
+}
