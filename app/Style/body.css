@@ -5,6 +5,11 @@ main.container {
     align-items: center;
 }
 
+main.container h4 {
+    font-size: var(--font-size-md-lg);
+    font-weight: 700;
+}
+
 main.container p {
     margin-top: 1.2rem;
     max-width: 300px;
@@ -26,5 +31,6 @@ main.container #trabalhos div img {
 }
 
 main.container #trabalhos div {
+    padding: 1.5rem;
     background-color: var(--bg-2);
 }
