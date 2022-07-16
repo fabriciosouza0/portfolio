@@ -1,36 +1,34 @@
-main.container {
+main#content {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
-main.container h4 {
+main#content h4 {
     font-size: var(--font-size-md-lg);
     font-weight: 700;
 }
 
-main.container p {
+main#content p {
     margin-top: 1.2rem;
     max-width: 300px;
 }
 
-main.container #trabalhos {
+main#content #trabalhos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
     margin-top: 1.8rem;
     width: 100%;
 }
 
-main.container #trabalhos div img {
+main#content #trabalhos div img {
     width: 100%;
 	object-fit: contain;
 	height: 300px;
 }
 
-main.container #trabalhos div {
+main#content #trabalhos div {
     padding: 1.5rem;
     background-color: var(--bg-2);
 }
