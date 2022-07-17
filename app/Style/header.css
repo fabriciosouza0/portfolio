@@ -150,7 +150,45 @@ header img {
 	row-gap: 1rem;
 }
 
+.hamburger-lines {
+	display: block;
+	height: 26px;
+	width: 32px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hamburger-lines .line {
+	display: block;
+	height: 4px;
+	width: 100%;
+	border-radius: 10px;
+	background: var(--text-color-main);
+}
+
+.hamburger-lines .line1 {
+	transform-origin: 0% 0%;
+	transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+	transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+	transform-origin: 0% 100%;
+	transition: transform 0.4s ease-in-out;
+}
+
 @media (min-width: 280px) {
+	#hamburger {
+		display: block;
+		flex-grow: 2;
+	}
+
 	#header_content {
 		margin-top: -335px;
 		text-align: center;
@@ -169,8 +207,66 @@ header img {
 		grid-template-columns: 1fr !important;
 	}
 
+	.navbar {
+		flex-direction: row-reverse;
+	}
+
+	.navbar.container .row.flex {
+		flex-direction: row-reverse;
+		align-items: center;
+		width: 100%;
+	}
+
+	.navbar-collapse {
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		justify-content: flex-start !important;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.navbar-collapse ul.nav {
+		flex-direction: column;
+		background-color: var(--bg-2);
+	}
+
 	main#content #trabalhos div {
 		margin: 10px;
+	}
+
+	.checkbox {
+		position: absolute;
+		top: 26px;
+		display: block;
+		height: 32px;
+		width: 32px;
+		z-index: 5;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]:checked~.menu-items {
+		transform: translateX(0);
+	}
+
+	input[type="checkbox"]:checked~.hamburger-lines .line1 {
+		transform: rotate(45deg);
+	}
+
+	input[type="checkbox"]:checked~.hamburger-lines .line2 {
+		transform: scaleY(0);
+	}
+
+	input[type="checkbox"]:checked~.hamburger-lines .line3 {
+		transform: rotate(-45deg);
+	}
+
+	input[type="checkbox"]:checked~.logo {
+		display: none;
 	}
 }
 
@@ -183,6 +279,10 @@ header img {
 }
 
 @media (min-width: 768px) {
+	#hamburger {
+		display: none;
+	}
+
 	.container {
 		max-width: 700px;
 	}
@@ -206,8 +306,35 @@ header img {
 		padding-left: 1.2rem;
 	}
 
+	.navbar {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		height: 100px;
+	}
+
+	.navbar.container .row.flex {
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+	}
+
+	.navbar-collapse {
+		display: flex;
+		position: relative;
+		justify-content: flex-end !important;
+		background-color: transparent;
+	}
+
+	.navbar-collapse ul.nav {
+		flex-direction: row;
+		background-color: transparent;
+		align-items: center;
+	}
+
 	main#content #trabalhos {
-		grid-template-columns: repeat(2, 1fr)!important;
+		grid-template-columns: repeat(2, 1fr) !important;
 	}
 }
 
@@ -223,6 +350,6 @@ header img {
 	}
 
 	main#content #trabalhos {
-		grid-template-columns: repeat(3, 1fr)!important;
+		grid-template-columns: repeat(3, 1fr) !important;
 	}
 }
