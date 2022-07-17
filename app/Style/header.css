@@ -243,6 +243,11 @@ header img {
 	}
 
 	#toggle:checked~.navbar-collapse .nav {
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		-o-transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+
 		transform: translateX(0px);
 	}
 
@@ -256,19 +261,37 @@ header img {
 
 	#toggle:checked,
 	#toggle:checked~#hamburger .hamburger-lines {
+		-moz-transform: translateX(calc(113.23px + 0.5rem));
+		-ms-transform: translateX(calc(113.23px + 0.5rem));
+		-o-transform: translateX(calc(113.23px + 0.5rem));
+		-webkit-transform: translateX(calc(113.23px + 0.5rem));
+
 		transform: translateX(calc(113.23px + 0.5rem));
 	}
 
 	#toggle:checked~#hamburger .hamburger-lines .line1 {
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+
 		transform: rotate(45deg);
 	}
 
 	#toggle:checked~#hamburger .hamburger-lines .line2 {
+		-moz-transform: scaleY(0);
+		-ms-transform: scaleY(0);
+		-o-transform: scaleY(0);
+		-webkit-transform: scaleY(0);
+
 		transform: scaleY(0);
 	}
 
 	#toggle:checked~#hamburger .hamburger-lines .line3 {
-		transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
 	}
 }
 
