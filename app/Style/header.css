@@ -240,13 +240,14 @@ header img {
 
 	.checkbox {
 		position: absolute;
-		top: 26px;
+		top: 35px;
 		display: block;
 		height: 32px;
 		width: 32px;
 		z-index: 5;
 		opacity: 0;
 		cursor: pointer;
+		margin: 0px;
 	}
 
 	input[type="checkbox"]:checked~.menu-items {
