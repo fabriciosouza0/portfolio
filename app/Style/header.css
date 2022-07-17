@@ -41,22 +41,6 @@
 	margin-top: -40px;
 }
 
-.bold {
-	font-weight: 700;
-}
-
-.bolder {
-	font-weight: 800;
-}
-
-.bg-2 {
-	background-color: var(--bg-2);
-}
-
-.text-color-main {
-	color: var(--text-color-main);
-}
-
 .navbar {
 	display: flex;
 	flex-direction: row;
@@ -104,15 +88,6 @@
 	object-fit: contain;
 }
 
-.container-fluid {
-	width: 100% !important;
-}
-
-.container {
-	width: min(100%, 1200px);
-	margin: 0 auto;
-}
-
 #header_content {
 	color: var(--text-color-main);
 	margin: 0 auto;
@@ -150,6 +125,7 @@ header img {
 	row-gap: 1rem;
 }
 
+/* Menu Hamburger lines */
 .hamburger-lines {
 	display: block;
 	height: 26px;
@@ -169,6 +145,10 @@ header img {
 	background: var(--text-color-main);
 }
 
+/* Menu Hamburger lines */
+
+
+/* Media querys */
 @media (min-width: 280px) {
 	#hamburger {
 		display: block;
@@ -180,17 +160,8 @@ header img {
 		text-align: center;
 	}
 
-	.container .row {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-
 	#header_wrapper {
 		flex-direction: column;
-	}
-
-	main#content #trabalhos {
-		grid-template-columns: 1fr !important;
 	}
 
 	.navbar {
@@ -218,10 +189,6 @@ header img {
 	.navbar-collapse ul.nav {
 		flex-direction: column;
 		background-color: var(--bg-2);
-	}
-
-	main#content #trabalhos div {
-		margin: 10px;
 	}
 
 	.checkbox {
@@ -300,24 +267,11 @@ header img {
 	}
 }
 
-@media (min-width: 576px) {
-	.container {
-		max-width: 560px;
-	}
-}
+@media (min-width: 576px) {}
 
 @media (min-width: 768px) {
 	#hamburger {
 		display: none;
-	}
-
-	.container {
-		max-width: 700px;
-	}
-
-	.container .row {
-		margin-left: 10px;
-		margin-right: 10px;
 	}
 
 	#header_content {
@@ -361,27 +315,11 @@ header img {
 		align-items: center;
 	}
 
-	main#content #trabalhos {
-		grid-template-columns: repeat(2, 1fr) !important;
-	}
-	
 	.circle {
 		border-radius: 0;
 	}
 }
 
-@media (min-width: 992px) {
-	.container {
-		max-width: 900px;
-	}
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1100px;
-	}
-
-	main#content #trabalhos {
-		grid-template-columns: repeat(3, 1fr) !important;
-	}
-}
+@media (min-width: 1200px) {}

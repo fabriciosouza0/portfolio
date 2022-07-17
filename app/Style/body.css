@@ -24,11 +24,37 @@ main#content #trabalhos {
 
 main#content #trabalhos div img {
     width: 100%;
-	object-fit: contain;
-	height: 300px;
+    object-fit: contain;
+    height: 300px;
 }
 
 main#content #trabalhos div {
     padding: 1.5rem;
     background-color: var(--bg-2);
+}
+
+@media (min-width: 280px) {
+    main#content #trabalhos {
+        grid-template-columns: 1fr !important;
+    }
+
+    main#content #trabalhos div {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    main#content #trabalhos {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    main#content #trabalhos {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
 }
