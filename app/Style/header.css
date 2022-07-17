@@ -294,9 +294,11 @@ header img {
 
 		transform: rotate(-45deg);
 	}
-}
 
-@media (min-width: 320px) {}
+	.circle {
+		border-radius: 50%;
+	}
+}
 
 @media (min-width: 576px) {
 	.container {
@@ -361,6 +363,10 @@ header img {
 
 	main#content #trabalhos {
 		grid-template-columns: repeat(2, 1fr) !important;
+	}
+	
+	.circle {
+		border-radius: 0;
 	}
 }
 
