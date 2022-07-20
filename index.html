@@ -16,28 +16,27 @@
 
 <body>
     <header class="container-fluid flex flex-direction-column align-items-center">
-        <nav class="navbar container">
-            <div class="row flex">
-                <div class="navbar-brand">
-                    <a href="" class="brand font-size-md">FABRICIO</a>
-                </div>
-                <input class="checkbox" type="checkbox" name="" id="toggle" />
-                <div id="hamburger">
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
+        <div class="container-fluid" id="nav_wrapper">
+            <div class="row">
+                <nav class="navbar container row flex">
+                    <div class="navbar-brand">
+                        <a href="" class="brand font-size-md">FABRICIO</a>
                     </div>
-                </div>
-                <div class="navbar-collapse flex justify-content-end" id="menu_opts">
-                    <ul class="nav">
-                        <a href="" class="nav-item">HOME</a>
-                        <a href="" class="nav-item">CURRÍCULO</a>
-                        <a href="" class="nav-item">CONTATO</a>
-                    </ul>
-                </div>
+                    <button class="hamburger" id="menu">
+                        <span></span>
+                    </button>
+                    <div class="container-fluid bg">
+                        <div class="container">
+                            <ul class="nav navbar-collapse flex justify-content-end" id="menu_opts">
+                                <a href="" class="nav-item">HOME</a>
+                                <a href="" class="nav-item">CURRÍCULO</a>
+                                <a href="#contato" class="nav-item">CONTATO</a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
         <div class="linear-gradient">
             <img src="app/Style/Assets/Images/header-content-bg.jpg" draggable="false" />
         </div>
@@ -46,7 +45,7 @@
                 <img class="profile-picture circle" style="margin:0 auto; width: 15rem; height: 15rem;"
                     src="app/Style/Assets/Images/profile-picture.jpg" draggable="false" />
                 <div class="flex flex-direction-column justify-content-center">
-                    <h4 class="font-size-lg bold">Programador full-stack</h4>
+                    <h4 class="font-size-lg bold">Desenvolvedor Web Full-Stack</h4>
                     <p class="font-size-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere veniam
                         atque minima rem</p>
                 </div>
@@ -160,41 +159,12 @@
         <h4>Entre em contato para alguma proposta</h4>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             It has survived not only five centuries</p>
-        <button class="btn text-color-main text-size-md">ENVIAR MENSAGEM</button>
+        <button class="btn text-color-main text-size-md" id="contato">ENVIAR MENSAGEM</button>
     </footer>
 </body>
 
 <script src="https://kit.fontawesome.com/6de25c2b47.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 3,
-        spacebetween: 20,
-        lazy: true,
-        loop: true,
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spacebetween: 0
-            },
-
-            576: {
-                slidesPerView: 2,
-                spacebetween: 0
-            },
-
-            768: {
-                slidesPerView: 3,
-                spacebetween: 0
-            }
-        }
-    });
-</script>
+<script src="app/js/scripts.js"></script>
 
 </html>
