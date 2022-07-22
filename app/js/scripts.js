@@ -27,10 +27,18 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+const go = (elem) => {
+    window.scroll({
+        top: document.querySelector(elem).offsetTop,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 const menu = document.getElementById('menu');
 const nav = document.getElementById('menu_opts');
 
-function toggleMenu() {
+const toggleMenu = () => {
     nav.classList.contains('active') ? nav.classList.remove('active') : nav.classList.add('active');
     menu.classList.contains('active') ? menu.classList.remove('active') : menu.classList.add('active');
 }

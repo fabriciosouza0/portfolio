@@ -10,6 +10,10 @@
 	--font-size-sm: 2.5rem;
 }
 
+.no-script {
+	display: none;
+}
+
 /* Displays */
 /* flex */
 .flex {

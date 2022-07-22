@@ -30,13 +30,29 @@
                             <ul class="nav navbar-collapse flex justify-content-end" id="menu_opts">
                                 <a href="" class="nav-item">HOME</a>
                                 <a href="" class="nav-item">CURRÍCULO</a>
-                                <a href="#contato" class="nav-item">CONTATO</a>
+                                <a href="#contato" class="nav-item no-script">
+                                    <noscript>
+                                        CONTATO
+                                    </noscript>
+                                </a>
+                                <a href="#" onclick="go('#contato')" id="link_contato" class="nav-item">CONTATO</a>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
+        <noscript>
+            <style>
+                #link_contato {
+                    display: none;
+                }
+
+                .no-script {
+                    display: block;
+                }
+            </style>
+        </noscript>
         <div class="linear-gradient">
             <img src="app/Style/Assets/Images/header-content-bg.jpg" draggable="false" />
         </div>

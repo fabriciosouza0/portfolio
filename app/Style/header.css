@@ -28,6 +28,25 @@
 	transition: all 0.2s ease-in-out;
 }
 
+#menu {
+	cursor: pointer;
+}
+
+#menu.active span {
+	border-top: 0px;
+}
+
+#menu.active span::before {
+	position: relative;
+	margin-top: -7px;
+	top: 7px;
+	transform: rotate(135deg);
+}
+
+#menu.active span::after {
+	transform: rotate(-135deg);
+}
+
 .hamburger {
 	position: relative;
 	border: none;
@@ -64,21 +83,6 @@
 	background-color: #fff;
 	bottom: 0px;
 	transition: all .2s ease-in-out;
-}
-
-#menu.active span {
-	border-top: 0px;
-}
-
-#menu.active span::before {
-	position: relative;
-	margin-top: -7px;
-	top: 7px;
-	transform: rotate(135deg);
-}
-
-#menu.active span::after {
-	transform: rotate(-135deg);
 }
 
 .swiper {
