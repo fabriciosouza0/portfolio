@@ -82,6 +82,10 @@
 	font-size: var(--font-size-md);
 }
 
+.font-size-md-lg {
+	font-size: var(--font-size-md-lg);
+}
+
 .font-size-sm {
 	font-size: var(--font-size-sm);
 }
@@ -104,6 +108,7 @@
 .text-align-center {
 	text-align: center !important;
 }
+
 /* Fim Text */
 
 /* bg-colors */
@@ -128,6 +133,30 @@
 }
 
 /* Fim Containers */
+
+/* Lazy Loading */
+.pop-in.lazy {
+	opacity: 1;
+}
+
+.lazy {
+	opacity: 0;
+	transition: all .2s ease-in-out;
+}
+
+.img-thumbnail {
+	border: 3px solid;
+	border-color: var(--text-color-main);
+	transition: all .2s ease-in-out;
+	object-fit: cover !important;
+}
+
+.img-thumbnail:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+/* Fim Lazy Loading */
 
 /* Media Querys */
 @media (min-width: 280px) {

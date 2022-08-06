@@ -126,10 +126,11 @@
 .profile-picture {
 	border: 0.4em solid var(--text-color-main);
 	/* 	border-radius: 50%; */
-	object-fit: contain;
+	object-fit: cover;
 }
 
 #header_content {
+	position: relative;
 	color: var(--text-color-main);
 	margin: 0 auto;
 	margin-top: -200px;
@@ -138,7 +139,7 @@
 
 header img {
 	width: 100%;
-	height: 350px;
+	height: 380px;
 	object-fit: cover;
 }
 
@@ -174,8 +175,9 @@ header img {
 	}
 
 	#header_content {
-		margin-top: -335px;
+		margin-top: -370px;
 		text-align: center;
+		max-width: 400px;
 	}
 
 	#header_wrapper {
@@ -258,6 +260,7 @@ header img {
 	#header_content {
 		margin-top: -200px;
 		text-align: justify;
+		max-width: none;
 	}
 
 	#header_wrapper {

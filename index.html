@@ -22,13 +22,11 @@
                     <div class="navbar-brand">
                         <a href="" class="brand font-size-md">FABRICIO</a>
                     </div>
-                    <button class="hamburger" id="menu">
-                        <span></span>
-                    </button>
+                    <button class="hamburger" id="menu"><span></span></button>
                     <div class="container-fluid bg">
                         <div class="container">
                             <ul class="nav navbar-collapse flex justify-content-end" id="menu_opts">
-                                <a href="" class="nav-item">HOME</a>
+                                <a href="#" class="nav-item" onclick="go('main')">PROJETOS</a>
                                 <a href="" class="nav-item">CURRÍCULO</a>
                                 <a href="#contato" class="nav-item no-script">
                                     <noscript>
@@ -62,8 +60,9 @@
                     src="app/Style/Assets/Images/profile-picture.jpg" draggable="false" />
                 <div class="flex flex-direction-column justify-content-center">
                     <h4 class="font-size-lg bold">Desenvolvedor Web Full-Stack</h4>
-                    <p class="font-size-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere veniam
-                        atque minima rem</p>
+                    <p class="font-size-md">Olá, me chamo Fabricio Souza. Um desenvolvedor Full-Stack apaixonado por
+                        php!
+                    </p>
                 </div>
             </div>
         </div>
@@ -72,38 +71,22 @@
             <div class="container ">
                 <div class="row flex flex-direction-column align-items-center justify-content-center"
                     style="row-gap: 1.2rem;">
-                    <h4 class="font-size-lg text-color-main bold" style="margin-top: 1.2rem;">Serviços</h4>
-                    <p class="text-color-main text-align-center" style="max-width: 500px;">Lorem Ipsum is simply dummy
-                        text
-                        of the printing and typesetting industry.
-                        It has survived not only five centuries</p>
+                    <h4 class="font-size-lg text-color-main bold" style="margin-top: 1.2rem;">Tecnologias</h4>
+                    <p class="text-color-main text-align-center" style="max-width: 500px;">Estas são as que mais utilizo
+                        no dia a dia para o desenvolvimento de projetos Web!</p>
                 </div>
                 <div class="swiper container">
                     <div class="swiper-wrapper" style="justify-content: space-between;">
                         <div class="swiper-slide flex justify-content-center">
                             <div class="card">
                                 <div class="card-header">
-                                    <img src="app/Style/Assets/Images/php-mysql.png" alt="">
+                                    <img data-lazy="app/Style/Assets/Images/php-mysql.png" alt="" data-lazy=""
+                                        class="lazy">
                                 </div>
-                                <div class="card-title text-color-main text-align-center">Lorem ipsum</div>
-                                <div class="card-content text-color-main text-align-center">Lorem Ipsum is simply dummy
-                                    text
-                                    of the printing and typesetting industry.
-                                    It has survived not only five centuries
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide flex justify-content-center">
-                            <div class="card">
-                                <div class="card-header">
-                                    <img src="app/Style/Assets/Images/php-mysql.png" alt="">
-                                </div>
-                                <div class="card-title text-color-main text-align-center">Lorem ipsum</div>
-                                <div class="card-content text-color-main text-align-center">Lorem Ipsum is simply dummy
-                                    text
-                                    of the printing and typesetting industry.
-                                    It has survived not only five centuries
+                                <div class="card-title text-color-main text-align-center">PHP</div>
+                                <div class="card-content text-color-main text-align-center">
+                                    Utilizo a Orientação a Objetos e o padrão MVC para tornar o código do software mais
+                                    limpo e padronizado.
                                 </div>
                             </div>
                         </div>
@@ -111,13 +94,12 @@
                         <div class="swiper-slide flex justify-content-center">
                             <div class="card">
                                 <div class="card-header">
-                                    <img src="app/Style/Assets/Images/php-mysql.png" alt="">
+                                    <img data-lazy="app/Style/Assets/Images/js.png" alt="" class="lazy">
                                 </div>
-                                <div class="card-title text-color-main text-align-center">Lorem ipsum</div>
-                                <div class="card-content text-color-main text-align-center">Lorem Ipsum is simply dummy
-                                    text
-                                    of the printing and typesetting industry.
-                                    It has survived not only five centuries
+                                <div class="card-title text-color-main text-align-center">JavaScript</div>
+                                <div class="card-content text-color-main text-align-center">Uma mão na roda para o
+                                    desenvolvimento front-end dos projetos. Se torna ainda mais conveniente em conjunto
+                                    com o Angular!
                                 </div>
                             </div>
                         </div>
@@ -125,13 +107,35 @@
                         <div class="swiper-slide flex justify-content-center">
                             <div class="card">
                                 <div class="card-header">
-                                    <img src="app/Style/Assets/Images/php-mysql.png" alt="">
+                                    <img data-lazy="app/Style/Assets/Images/laravel.png" alt="" class="lazy">
                                 </div>
-                                <div class="card-title text-color-main text-align-center">Lorem ipsum</div>
-                                <div class="card-content text-color-main text-align-center">Lorem Ipsum is simply dummy
-                                    text
-                                    of the printing and typesetting industry.
-                                    It has survived not only five centuries
+                                <div class="card-title text-color-main text-align-center">LARAVEL</div>
+                                <div class="card-content text-color-main text-align-center">Meu FrameWork favorito para
+                                    o desenvolvimento com php. Por possuir o padrão MVC e a Orientação a Objetos!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-content-center">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img data-lazy="app/Style/Assets/Images/bootstrap.png" alt="" class="lazy">
+                                </div>
+                                <div class="card-title text-color-main text-align-center">BOOTSTRAP</div>
+                                <div class="card-content text-color-main text-align-center">FrameWork CSS que geralmente
+                                    utilizo para a estilização das páginas. Não utilizo suas funções JavaScript.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-content-center">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img data-lazy="app/Style/Assets/Images/angular.png" alt="" class="lazy">
+                                </div>
+                                <div class="card-title text-color-main text-align-center">ANGULAR</div>
+                                <div class="card-content text-color-main text-align-center">FrameWork JavaScript que
+                                    utilizo para a construção do front-end das páginas. Muito veloz e de fácil entendimento!
                                 </div>
                             </div>
                         </div>
@@ -145,41 +149,79 @@
 
     <main class="container" id="content" style="margin-top: 2rem; margin-bottom: 2rem;">
         <h4 class="text-color-main text-size-md-lg">Trabalhos Recentes</h4>
-        <p class="text-color-main text-size-md">Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-            It has survived not only five centuries</p>
+        <p class="text-color-main text-size-md">Alguns projetos desenvolvidos por mim utilizando php, js, html e css!
+        </p>
         <section id="trabalhos">
-            <div>
-                <img src="" alt="">
+            <div class="card">
+                <div class="card-header text-color-main text-align-center font-size-md-lg bold">
+                    <a href="https://datmovie.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        DatMovie
+                    </a>
+                </div>
+                <div class="card-title" style="padding: 0px !important;">
+                    <a href="https://datmovie.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <img data-lazy="app/Style/Assets/Images/datmovie.png" alt="" class="img-thumbnail lazy">
+                    </a>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="card">
+                <div class="card-header text-color-main text-align-center font-size-md-lg bold">
+                    <a href="https://fabricio-derp.github.io/pokedex/" target="_blank" rel="noopener noreferrer">
+                        PokeDex
+                    </a>
+                </div>
+                <div class="card-title" style="padding: 0px !important;">
+                    <a href="https://fabricio-derp.github.io/pokedex/" target="_blank" rel="noopener noreferrer">
+                        <img data-lazy="app/Style/Assets/Images/pokedex.png" alt="" class="img-thumbnail lazy">
+                    </a>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="card">
+                <div class="card-header text-color-main text-align-center font-size-md-lg bold">
+                    ...
+                </div>
+                <div class="card-title" style="padding: 0px !important;">
+                    <img data-lazy="app/Style/Assets/Images/work-icon.png" alt="" class="lazy">
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="">
+            <div class="card">
+                <div class="card-header text-color-main text-align-center font-size-md-lg bold">
+                    ...
+                </div>
+                <div class="card-title" style="padding: 0px !important;">
+                    <img data-lazy="app/Style/Assets/Images/work-icon.png" alt="" class="lazy">
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="card">
+                <div class="card-header text-color-main text-align-center font-size-md-lg bold">
+                    ...
+                </div>
+                <div class="card-title" style="padding: 0px !important;">
+                    <img data-lazy="app/Style/Assets/Images/work-icon.png" alt="" class="lazy">
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="card">
+                <div class="card-header text-color-main text-align-center font-size-md-lg bold">
+                    ...
+                </div>
+                <div class="card-title" style="padding: 0px !important;">
+                    <img data-lazy="app/Style/Assets/Images/work-icon.png" alt="" class="lazy">
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <h4>Entre em contato para alguma proposta</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            It has survived not only five centuries</p>
-        <button class="btn text-color-main text-size-md" id="contato">ENVIAR MENSAGEM</button>
+        <p>Logo abaixo está o link para o meu LinkedIn. Me envie uma mensagem pela plataforma, caso tenha algum
+            interesse, ficarei muito feliz
+            :)</p>
+        <a href="https://www.linkedin.com/in/fabricio-souza0/" target="_blank" rel="noopener noreferrer"
+            class="btn text-color-main text-size-md" id="contato">ENVIAR MENSAGEM</a>
     </footer>
 </body>
 
-<script src="https://kit.fontawesome.com/6de25c2b47.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="app/js/scripts.js"></script>
 
