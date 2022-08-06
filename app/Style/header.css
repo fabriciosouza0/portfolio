@@ -167,6 +167,11 @@ header img {
 	row-gap: 1rem;
 }
 
+#header_body {
+	width: 100% !important;
+	padding-top: calc(40px + 1.2rem)
+}
+
 /* Media querys */
 @media (min-width: 280px) {
 	#hamburger {
@@ -250,6 +255,24 @@ header img {
 	.circle {
 		border-radius: 50%;
 	}
+
+	.typing-animation {
+		border-right: 0px;
+		text-align: center;
+		width: auto;
+		white-space: initial;
+		animation: none;
+	}
+}
+
+@media (min-width: 394px) {
+	#header_content {
+		margin-top: -360px;
+	}
+
+	#header_body {
+		margin-top: 0px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -261,6 +284,10 @@ header img {
 		margin-top: -200px;
 		text-align: justify;
 		max-width: none;
+	}
+
+	#header_body {
+		margin-top: -40px;
 	}
 
 	#header_wrapper {
@@ -330,5 +357,34 @@ header img {
 
 	.circle {
 		border-radius: 0;
+	}
+
+	.typing-animation {
+		border-right: 3px solid rgba(255, 255, 255, 0.75);
+		text-align: left;
+		width: fit-content;
+		white-space: nowrap;
+		overflow: hidden;
+		animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blinkCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, 0.75);
+	}
+
+	to {
+		border-right-color: transparent;
 	}
 }
