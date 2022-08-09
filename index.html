@@ -33,11 +33,6 @@
                             <ul class="nav navbar-collapse flex justify-content-end" id="menu_opts">
                                 <a href="#" class="nav-item" onclick="go('main')">PROJETOS</a>
                                 <a href="https://github.com/fabriciosouza0" class="nav-item">GITHUB</a>
-                                <a href="#contato" class="nav-item no-script">
-                                    <noscript>
-                                        CONTATO
-                                    </noscript>
-                                </a>
                                 <a href="#" onclick="go('#contato')" id="link_contato" class="nav-item">CONTATO</a>
                             </ul>
                         </div>
@@ -45,26 +40,15 @@
                 </nav>
             </div>
         </div>
-        <noscript>
-            <style>
-                #link_contato {
-                    display: none;
-                }
-
-                .no-script {
-                    display: block;
-                }
-            </style>
-        </noscript>
         <div class="linear-gradient">
             <img src="app/Style/Assets/Images/header-content-bg.jpg" draggable="false" />
         </div>
-        <div class="container flex" id="header_content">
+        <div class="container flex header_content" id="header_content">
             <div class="row flex flex-direction-row" id="header_wrapper">
                 <img class="profile-picture circle" style="margin:0 auto; width: 15rem; height: 15rem;"
                     src="app/Style/Assets/Images/profile-picture.jpg" draggable="false" />
                 <div class="flex flex-direction-column justify-content-center">
-                    <h4 class="font-size-lg bold typing-animation">Olá, sou Fabricio Souza!</h4>
+                    <h4 class="font-size-lg bold typing-animation">Olá, me chamo Fabricio Souza!</h4>
                     <p class="font-size-md">Um desenvolvedor Full-Stack apaixonado por php!</p>
                 </div>
             </div>
@@ -79,6 +63,43 @@
                 </div>
                 <div class="swiper container">
                     <div class="swiper-wrapper" style="justify-content: space-between;">
+                        <div class="swiper-slide flex justify-content-center">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img data-lazy="app/Style/Assets/Images/laravel.png" alt="" class="lazy">
+                                </div>
+                                <div class="card-title text-color-main text-align-center">LARAVEL</div>
+                                <div class="card-content text-color-main text-align-center">Meu FrameWork favorito para
+                                    o desenvolvimento com php. Por possuir o padrão MVC e a Orientação a Objetos!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-content-center">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img data-lazy="app/Style/Assets/Images/angular.png" alt="" class="lazy">
+                                </div>
+                                <div class="card-title text-color-main text-align-center">ANGULAR</div>
+                                <div class="card-content text-color-main text-align-center">FrameWork JavaScript que
+                                    utilizo para a construção do front-end das páginas. Muito veloz e de fácil
+                                    entendimento!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide flex justify-content-center">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img data-lazy="app/Style/Assets/Images/bootstrap.png" alt="" class="lazy">
+                                </div>
+                                <div class="card-title text-color-main text-align-center">BOOTSTRAP</div>
+                                <div class="card-content text-color-main text-align-center">FrameWork CSS que geralmente
+                                    utilizo para a estilização das páginas. Não utilizo suas funções JavaScript.
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="swiper-slide flex justify-content-center">
                             <div class="card">
                                 <div class="card-header">
@@ -102,43 +123,6 @@
                                 <div class="card-content text-color-main text-align-center">Uma mão na roda para o
                                     desenvolvimento front-end dos projetos. Se torna ainda mais conveniente em conjunto
                                     com o Angular!
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide flex justify-content-center">
-                            <div class="card">
-                                <div class="card-header">
-                                    <img data-lazy="app/Style/Assets/Images/laravel.png" alt="" class="lazy">
-                                </div>
-                                <div class="card-title text-color-main text-align-center">LARAVEL</div>
-                                <div class="card-content text-color-main text-align-center">Meu FrameWork favorito para
-                                    o desenvolvimento com php. Por possuir o padrão MVC e a Orientação a Objetos!
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide flex justify-content-center">
-                            <div class="card">
-                                <div class="card-header">
-                                    <img data-lazy="app/Style/Assets/Images/bootstrap.png" alt="" class="lazy">
-                                </div>
-                                <div class="card-title text-color-main text-align-center">BOOTSTRAP</div>
-                                <div class="card-content text-color-main text-align-center">FrameWork CSS que geralmente
-                                    utilizo para a estilização das páginas. Não utilizo suas funções JavaScript.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide flex justify-content-center">
-                            <div class="card">
-                                <div class="card-header">
-                                    <img data-lazy="app/Style/Assets/Images/angular.png" alt="" class="lazy">
-                                </div>
-                                <div class="card-title text-color-main text-align-center">ANGULAR</div>
-                                <div class="card-content text-color-main text-align-center">FrameWork JavaScript que
-                                    utilizo para a construção do front-end das páginas. Muito veloz e de fácil
-                                    entendimento!
                                 </div>
                             </div>
                         </div>

@@ -128,7 +128,6 @@
 }
 
 .container {
-	width: min(100%, 1200px);
 	margin: 0 auto;
 }
 
@@ -161,36 +160,36 @@
 /* Media Querys */
 @media (min-width: 280px) {
 	.container .row {
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 10px !important;
+		margin-right: 10px !important;
 	}
 }
 
 @media (min-width: 576px) {
 	.container {
-		max-width: 560px;
+		max-width: 560px !important;
 	}
 }
 
 @media (min-width: 768px) {
 	.container {
-		max-width: 700px;
+		max-width: 700px !important;
 	}
 
 	.container .row {
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 10px !important;
+		margin-right: 10px !important;
 	}
 }
 
 @media (min-width: 992px) {
 	.container {
-		max-width: 900px;
+		max-width: 900px !important;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1100px;
+		max-width: 1100px !important;
 	}
 }
