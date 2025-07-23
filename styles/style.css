@@ -146,7 +146,7 @@ body {
 .md-card-occupation {
   font-size: 32px;
   margin-bottom: 12px;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .md-card-icon {
@@ -383,6 +383,9 @@ footer .contact-item {
 
 /* sm (640px) */
 @media (min-width: 640px) {
+  .md-card-occupation {
+    white-space: nowrap;
+  }
 }
 
 /* md (768px) */
