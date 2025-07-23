@@ -1,0 +1,28 @@
+.about-card {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 2);
+  background-color: var(--color-neutral-900);
+  border-radius: calc(var(--spacing) * 5);
+  width: fit-content;
+}
+
+.about-card-img-container {
+  padding: 16px 16px 0px;
+  border-radius: calc(var(--spacing) * 5);
+  background-color: #000000;
+}
+
+.about-card-img {
+  width: 272px;
+  height: 272px;
+}
+
+.about-img-caption {
+  font-size: 0.875rem;
+  line-height: calc(1.25/0.875);
+  text-align: center;
+  color: var(--color-neutral-400);
+  margin-bottom: 15px;
+}

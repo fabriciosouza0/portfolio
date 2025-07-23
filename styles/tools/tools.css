@@ -1,0 +1,7 @@
+.full-view {
+  min-height: var(--dvh-100);
+}
+
+.full-view-body {
+  min-height: var(--dvh-body);
+}

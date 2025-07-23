@@ -1,0 +1,42 @@
+.card-project-container {
+  background-color: var(--color-neutral-900);
+  padding: 16px 20px;
+  border-radius: calc(var(--spacing) * 5);
+  transition: all ease-in-out 0.25s;
+}
+
+.card-project-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.card-project-info-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-project-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card-project-technologies {
+  font-size: 16px;
+  line-height: calc(1.5 / 1);
+  color: var(--color-purple-500);
+  white-space: nowrap;
+}
+
+.card-project-img {
+  min-width: 372px;
+  height: 400px;
+  border-radius: 1.5rem;
+  max-width: 100%;
+  object-fit: cover;
+}
