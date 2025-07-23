@@ -30,6 +30,9 @@
   font-size: 16px;
   line-height: calc(1.5 / 1);
   color: var(--color-purple-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-project-img {
